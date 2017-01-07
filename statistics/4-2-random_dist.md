@@ -11,8 +11,14 @@ num = np.random.random(1000) <br>
 pmf_np = thinkstats2.Pmf(num) <br>
 cdf_np = thinkstats2.Cdf(num) <br>
 
->> thinkplot.Pmf(pmf_np, linewidth=0.1)
+>> thinkplot.Pmf(pmf_np, linewidth=0.1) <br>
 thinkplot.Config(xlabel='random distribution', ylabel='PMF') <br>
+![alt tag](https://github.com/jjchoi08/dsp/blob/master/img/ch4ex2_1.png)
 
->> thinkplot.Cdf(cdf_np)
+PMF cannot represent probabilities of large number of values in this case. Since we have 1000 randomly generated numbers, PMF plot is difficult to view. 
+
+>> thinkplot.Cdf(cdf_np) <br>
 thinkplot.Config(xlabel='random distribution', ylabel='CDF') <br>
+![alt tag](https://github.com/jjchoi08/dsp/blob/master/img/ch4ex2_2.png)
+
+The CDF is approximately a straight line, which means that the distribution is uniform.
