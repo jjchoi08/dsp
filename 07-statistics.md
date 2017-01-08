@@ -94,7 +94,8 @@ When plug in the numbers to the formula,<br>
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentists statistics is fundamentally related to the frequencies of repeated events thus, variation of data and derived quantities in terms of fixed model parameters is analyzed. Bayseian statistics is fundamentally related to our own certainty or uncertainty of events thus, we analyze variation of belifs about parameters in terms of fixed obersved data. <br>
+>> Frequentists' approach is usually focusing on the likelihood of many different data by multiplying them and measuring the weighted average. However, Bayesian approach tends to focus on the posterior probability where we allow nuisance parameters to vary through marginaization. 
 
 ---
 
