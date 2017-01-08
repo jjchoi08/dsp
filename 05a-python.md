@@ -98,7 +98,6 @@ date_stop = '05282015'
 ```
 
 >> 
-
 c.  datetime.datetime.strptime(date_stop, '%d-%b-%Y') - datetime.datetime.strptime(date_start, '%d-%b-%Y') <br>
 datetime.timedelta(7850) <br>
 7850 days <br>
