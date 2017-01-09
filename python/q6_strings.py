@@ -8,7 +8,7 @@ def donuts(count):
     form 'Number of donuts: <count>', where <count> is the number
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
-
+  
     >>> donuts(4)
     'Number of donuts: 4'
     >>> donuts(9)
@@ -18,6 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    
+    if count > 10:
+        return "Number of donuts: many"
+    else:
+        return "Number of donuts: {}".format(count)
+    
     raise NotImplementedError
 
 
@@ -37,6 +43,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s) < 2:
+        return ''
+    else:
+        return s[:2] + s[-2:]
     raise NotImplementedError
 
 
@@ -56,6 +66,7 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    return s[0] + s[1:].replace(s[0],"*")
     raise NotImplementedError
 
 
@@ -74,6 +85,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    return b[:2] + a[2:], a[:2] + b[2:]
+    
     raise NotImplementedError
 
 
@@ -111,6 +124,8 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    import re
+    return re.sub('not.*bad','good',s, flags=re.DOTALL)
     raise NotImplementedError
 
 
@@ -130,4 +145,8 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    a_half = (len(a) + 1) / 2
+    b_half = (len(b) + 1) / 2 
+    
+    return a[:a_half] + b[:b_half] + a[a_half:] + b[b_half:]
     raise NotImplementedError
